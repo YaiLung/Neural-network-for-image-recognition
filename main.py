@@ -23,21 +23,25 @@ sad_smileys = []
 # Define the data augmentation transformations
 
 
-
 for i in range(1000):
+    # Creating cheerful smiley
     cheerful_smiley = Image.new('RGB', (SIZE, SIZE), color=CHEERFUL_COLOR)
     draw = ImageDraw.Draw(cheerful_smiley)
     draw.arc((3, 3, SIZE-4, SIZE-3), 0, 180, fill=(0, 0, 0), width=2)
-    draw.rectangle((6, 3, 8, 7), fill=(0, 0, 0))
-    draw.rectangle((20, 3, 22, 7), fill=(0, 0, 0))
+    draw.rectangle((6, 3, 8, 7), fill=(0, 0, 0))  # Corrected version
+    draw.rectangle((20, 3, 22, 7), fill=(0, 0, 0))  # Corrected version
     cheerful_smileys.append(np.array(cheerful_smiley))
 
+    # Creating sad smiley
     sad_smiley = Image.new('RGB', (SIZE, SIZE), color=SAD_COLOR)
     draw = ImageDraw.Draw(sad_smiley)
     draw.arc((3, 12, SIZE-4, SIZE+10), 180, 360, fill=(0, 0, 0), width=2)
-    draw.rectangle((8, 7, 6, 3), fill=(0, 0, 0))
-    draw.rectangle((22, 7, 20, 3), fill=(0, 0, 0))
+    draw.rectangle((6, 3, 8, 7), fill=(0, 0, 0))  # Corrected version
+    draw.rectangle((20, 3, 22, 7), fill=(0, 0, 0))  # Corrected version
     sad_smileys.append(np.array(sad_smiley))
+
+# Showing an example cheerful smiley
+cheerful_smiley.show()
 
 # сэт + хэппи
 images = np.array(cheerful_smileys + sad_smileys)
