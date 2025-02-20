@@ -138,8 +138,7 @@ clear_button.pack(side=LEFT, padx=10)
 predict_button.pack()
 
 # Run the GUI
-if __name__ == "__main__":
-    root.mainloop()
+root.mainloop()
 
 
 
