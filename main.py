@@ -94,10 +94,10 @@ model.fit(train_images, train_labels, epochs=10, validation_data=(test_images, t
 # Теперь мы создадим графический пользовательский интерфейс с помощью tkinter
 # GUI = graphical user interface (графический пользовательский интерфейс)
 root = Tk()
-root.title("Нарисуй смайлик")
+root.title("DRAW SMILE")
 
-canvas_width = SIZE * 10
-canvas_height = SIZE * 10
+canvas_width = 56 * 10
+canvas_height = 56 * 10
 canvas = Canvas(root, width=canvas_width, height=canvas_height, bg='white')
 canvas.pack()
 
@@ -132,13 +132,14 @@ canvas.bind("<B1-Motion>", paint)
 def clear_canvas():
     canvas.delete("all")
 # Мы также создадим кнопку, которая при нажатии вызывает функцию predict_smiley.
-predict_button = Button(root, text="Проверить", command=predict_smiley)
+predict_button = Button(root, text="Check", command=predict_smiley)
 clear_button = Button(root, text="Clear", command=clear_canvas)
 clear_button.pack(side=LEFT, padx=10)
 predict_button.pack()
 
 # Run the GUI
-root.mainloop()
+if __name__ == "__main__":
+    root.mainloop()
 
 
 
