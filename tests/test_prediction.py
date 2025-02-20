@@ -1,4 +1,6 @@
 import numpy as np
+import sys
+sys.path.append("main.py")  # Добавь путь к папке с main.py
 from main import model, SIZE
 
 def test_prediction():
