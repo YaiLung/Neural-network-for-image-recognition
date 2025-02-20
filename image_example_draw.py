@@ -13,8 +13,8 @@ SIZE = 28
 cheerful_smiley = Image.new('RGB', (SIZE, SIZE), color=(255, 255, 255))
 draw = ImageDraw.Draw(cheerful_smiley)
 draw.arc((3, 12, SIZE-4, SIZE+10), 180, 360, fill=(0, 0, 0), width=2)
-draw.rectangle((8, 7, 6, 3),fill= (0, 0, 0))
-draw.rectangle((22,7, 20, 3),fill= (0, 0, 0))
+draw.rectangle((6, 3, 8, 7), fill=(0, 0, 0))  # Исправленная версия
+draw.rectangle((20, 3, 22, 7), fill=(0, 0, 0))  # Исправленная версия
 cheerful_smiley.show()
 
 
