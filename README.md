@@ -1,3 +1,9 @@
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/YaiLung/Neural-network-for-image-recognition/python-package-conda.yml)
+
+
+
+
+
 # About project
 ## This is a Keras neural network for classifying user-drawn emoticons through the Tkinter GUI. Initially, the user creates an image with the parameters. This picture serves as the basis for creating different versions of this picture.
 ![___3](https://github.com/user-attachments/assets/bdd5453d-c5ab-4d16-b031-e3d97115177f)
