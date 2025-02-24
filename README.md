@@ -1,6 +1,7 @@
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/YaiLung/Neural-network-for-image-recognition/python-package-conda.yml)
 ![Static Badge](https://img.shields.io/badge/Python-3.10-blue)
-![GitHub tag status](https://img.shields.io/github/checks-status/YaiLung/Neural-network-for-image-recognition/1.0.2)
+![GitHub tag check runs](https://img.shields.io/github/check-runs/YaiLung/Neural-network-for-image-recognition/1.0.2)
+
 
 
 
