@@ -28,7 +28,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        conda env update --file .github/workflows/environment.yml --name base
+        conda env update --file .github/workflows/environment/environment.yml --name base
 
     - name: Set PYTHONPATH
       run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)" >> $GITHUB_ENV
